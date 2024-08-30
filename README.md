@@ -24,3 +24,14 @@ pip install .
 ## Usage
 
 (TODO)
+
+## Demo
+
+If you have [pixi](https://github.com/prefix-dev/pixi) can run the demos with:
+
+
+```bash
+pixi run demo_task_space
+#or
+pixi run demo_impedance
+```
