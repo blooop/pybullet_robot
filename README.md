@@ -27,7 +27,7 @@ pip install .
 
 ## Demo
 
-If you have [pixi](https://github.com/prefix-dev/pixi) can run the demos with:
+If you have [pixi](https://github.com/prefix-dev/pixi) you can run the demos with:
 
 
 ```bash
