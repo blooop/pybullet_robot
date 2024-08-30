@@ -27,10 +27,16 @@ pybullet_robot = { path = ".", editable = true }
 python = ">=3.10"
 
 [tool.pixi.tasks]
-style ="black . ; ruff check . --fix"
+ci = "black . && ruff check . --fix && pylint $(git ls-files '*.py') && pytest"
 
 demo_task_space = "python3 ./examples/demo_task_space_control.py"
 demo_impedance = "python3 ./examples/demo_task_space_control.py"
+
+
+#LINTING OPTIONS
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = "C,logging-fstring-interpolation,line-too-long,fixme,broad-exception-caught,missing-module-docstring,too-many-instance-attributes,too-few-public-methods,too-many-arguments,too-many-locals,too-many-branches,too-many-statements,use-dict-literal,cyclic-import,duplicate-code,too-many-public-methods"
 
 # Ignore `E402` (import violations) in all `__init__.py` files, and in `path/to/file.py`.
 [tool.ruff.lint.per-file-ignores]
