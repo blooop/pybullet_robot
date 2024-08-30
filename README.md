@@ -32,6 +32,6 @@ If you have [pixi](https://github.com/prefix-dev/pixi) you can run the demos wit
 
 ```bash
 pixi run demo_task_space
-#or
+# or
 pixi run demo_impedance
 ```
