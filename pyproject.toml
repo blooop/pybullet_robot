@@ -28,5 +28,5 @@ python = ">=3.10"
 
 [tool.pixi.tasks]
 demo_task_space = "python3 ./examples/demo_task_space_control.py"
-demo_impedance = "python3 ./examples/demo_task_space_control.py"
+demo_impedance = "python3 ./examples/impedance_controllers.py"
 
