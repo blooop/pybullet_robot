@@ -363,7 +363,7 @@ packages:
   name: pybullet-robot
   version: 0.1.4
   path: .
-  sha256: 09c3ca863e4180774b41d8996f03f0f315a1e861cc8098652cf43c8e76b1a511
+  sha256: ec4aa702c589213ba5cc86ea82e5216e707ef3481ddbb1be9aaf931c3a3aa783
   requires_dist:
   - robot-descriptions>=1.11.0,<2
   - numpy>=1.6,<3
