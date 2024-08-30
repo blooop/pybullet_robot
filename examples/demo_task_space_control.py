@@ -25,7 +25,6 @@ Kd[3:] = np.asarray([0.00, 0.00, 0.00])
 NULLSPACE_Kp = np.array([1000] * 9)
 
 if __name__ == "__main__":
-
     robot = BulletRobot(
         urdf_path=get_urdf_from_awesome_robot_descriptions("panda_description"),
         default_joint_positions=NEUTRAL_JOINT_POS,
@@ -47,7 +46,6 @@ if __name__ == "__main__":
     controller.set_target(goal_pos=curr_ee_pos.copy(), goal_ori=curr_ee_ori.copy())
 
     while True:
-
         joint_cmds, _ = controller.compute_cmd()
         robot.set_actuated_joint_commands(tau=joint_cmds)
 

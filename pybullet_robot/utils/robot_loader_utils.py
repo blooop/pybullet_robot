@@ -11,7 +11,6 @@ AWESOME_ROBOTS: List[str] = _AR_DESCRIPTIONS.keys()
 
 
 def _get_file_from_ard_pkg(description_pkg_name, filetype):
-
     try:
         return getattr(
             importlib.import_module(f"robot_descriptions.{description_pkg_name}"),

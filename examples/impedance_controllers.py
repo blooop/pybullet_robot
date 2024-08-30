@@ -28,7 +28,6 @@ class CartesianImpedanceController:
         null_kp: np.ndarray,
         nullspace_pos_target: np.ndarray,
     ):
-
         self._robot = robot
         self._kp = kp
         self._kd = kd
@@ -78,7 +77,6 @@ class JointImpedanceController:
     """Simplified PD control for end-effector tracking."""
 
     def __init__(self, robot: BulletRobot, kp: np.array, kd: np.ndarray):
-
         self._robot = robot
         self._kp = kp
         self._kd = kd
